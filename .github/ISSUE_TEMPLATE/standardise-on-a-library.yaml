@@ -127,7 +127,7 @@ body:
     label: "Prior experience"
     description: "How much prior experience of this library?"
     options:
-      - "None"
+      - Zero
       - We ran a spike
       - I have used it before
       - We have lots of experience
