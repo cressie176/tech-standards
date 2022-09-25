@@ -87,19 +87,21 @@ body:
   attributes:
     label: "Community"
     description: "Is the library supported by a helpful community?"
-  options:
-    - Yes
-    - No
+    options:
+      - Yes
+      - No
   validations:
     required: true        
 - type: dropdown
   id: documentation
   attributes:
     label: "Documentation"
-    description: "Does the library have adequate documentation?"
-  options:
-    - Yes
-    - No
+    description: "How good is the library's documentation?"
+    options:
+      - Comprehensive
+      - Adequate
+      - Poor
+      - None existent
   validations:
     required: true  
 - type: dropdown
@@ -107,9 +109,10 @@ body:
   attributes:
     label: "Continuous Integration"
     description: "Does the library have continuous integration?"
-  options:
-    - Yes
-    - No
+    options:
+      - Yes
+      - Yes (but it's failing)
+      - No
   validations:
     required: true
 - type: input
@@ -123,11 +126,11 @@ body:
   attributes:
     label: "Prior experience"
     description: "How much prior experience of this library?"
-  options:
-    - None
-    - We ran a spike
-    - I have used it before
-    - We have lots of experience
+    options:
+      - None
+      - We ran a spike
+      - I have used it before
+      - We have lots of experience
   validations:
     required: true
 - type: textarea
