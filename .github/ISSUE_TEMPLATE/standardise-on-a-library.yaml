@@ -1,0 +1,140 @@
+name: Standardise on a library
+description: Use this template to propose standardising on a software library
+title: "[LIBRARY] <title>"
+labels: [Draft]
+body:
+- type: input
+  attributes:
+    label: "Name"
+    description: "Name of the library you propose we standardise on?"
+  validations:
+    required: true    
+- type: textarea
+  attributes:
+    label: "Website URL"
+    description: "Provide link to the library's website"
+  validations:
+    required: true        
+- type: textarea
+  attributes:
+    label: "Purpose"
+    description: "Provide a brief description of the library's main purpose"
+  validations:
+    required: true    
+- type: textarea
+  attributes:
+    label: "Key requirements"
+    description: "List the key requirements for a library with this purpose?"
+    placeholder: |
+      1. Requirement 1
+         More details...
+      2. Requirement 2
+         More details...
+      3. Requirement 3
+         More details...
+  validations:
+    required: true    
+- type: textarea
+  attributes:
+    label: "Strengths"
+    description: "List the library's main strengths"
+    placeholder: |
+      1. Strength 1
+         More details...
+      2. Strength 2
+         More details...
+      3. Strength 3
+         More details...
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: "Weaknesses"
+    description: "List the library's main weaknesses"
+    placeholder: |
+      1. Weakness 1
+         More details...
+      2. Weakness 2
+         More details...
+      3. Weakness 3
+         More details...
+  validations:
+    required: true  
+- type: textarea
+  attributes:
+    label: Alternatives
+    description: List alternative libraries and the reasons for rejecting them
+      1. Alternative 1
+         Rejected because...
+      2. Reason 1
+         Rejected because...    
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: "Downloads per month"
+    description: "How many downloads does the library receive per month?"
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: "Open issues"
+    description: "How many open issues doe the library have?"
+  validations:
+    required: true
+- type: dropdown
+  id: community
+  attributes:
+    label: "Community"
+    description: "Is the library supported by a helpful community?"
+  options:
+    - Yes
+    - No
+  validations:
+    required: true        
+- type: dropdown
+  id: documentation
+  attributes:
+    label: "Documentation"
+    description: "Does the library have adequate documentation?"
+  options:
+    - Yes
+    - No
+  validations:
+    required: true  
+- type: dropdown
+  id: ci
+  attributes:
+    label: "Continuous Integration"
+    description: "Does the library have continuous integration?"
+  options:
+    - Yes
+    - No
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: "Test Coverage"
+    description: "What is the library's test coverage?"
+  validations:
+    required: true
+- type: dropdown
+  id: prior_experience
+  attributes:
+    label: "Prior experience"
+    description: "How much prior experience of this library?"
+  options:
+    - None
+    - We ran a spike
+    - I have used it before
+    - We have lots of experience
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Mode details
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
