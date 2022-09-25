@@ -1,6 +1,6 @@
 name: Standardise on a library
 description: Use this template to propose standardising on a software library
-title: "[LIBRARY] <title>"
+title: "Standardise on a [PURPOSE] library"
 labels: [Draft]
 body:
 - type: input
@@ -9,12 +9,6 @@ body:
     description: "Name of the library you propose we standardise on?"
   validations:
     required: true    
-- type: textarea
-  attributes:
-    label: "Website URL"
-    description: "Provide link to the library's website"
-  validations:
-    required: true        
 - type: textarea
   attributes:
     label: "Purpose"
