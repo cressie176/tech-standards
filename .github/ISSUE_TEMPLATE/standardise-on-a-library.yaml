@@ -88,8 +88,8 @@ body:
     label: "Community"
     description: "Is the library supported by a helpful community?"
     options:
-      - Yes
-      - No
+      - "Yes"
+      - "No"
   validations:
     required: true        
 - type: dropdown
@@ -110,9 +110,9 @@ body:
     label: "Continuous Integration"
     description: "Does the library have continuous integration?"
     options:
-      - Yes
-      - Yes (but it's failing)
-      - No
+      - "Yes"
+      - "Yes (but it's failing)"
+      - "No"
   validations:
     required: true
 - type: input
